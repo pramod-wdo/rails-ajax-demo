@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsAjaxDemo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="http://bootswatch.com/flatly/bootstrap.min.css">
+    
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js""></script>
+    <script defer src="checked.js"></script>
+    <!-- <script defer src="index.js.erb"></script> -->
+  </head>
+
+  <body>
+    <%= render "shared/header" %>
+    <%= yield %>
+    <%= render "shared/footer" %>
+  </body>
+</html>
